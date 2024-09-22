@@ -34,7 +34,9 @@
 /**
  * Define nexSerial for communicate with Nextion touch panel. 
  */
-#define nexSerial Serial2
+#include <sofwareSerial.h>
+extern softwareSerial NextionSerial;
+#define nexSerial Serial
 
 
 #ifdef DEBUG_SERIAL_ENABLE
